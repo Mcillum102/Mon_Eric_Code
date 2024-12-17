@@ -86,4 +86,22 @@ for i in range(1, num+1):
     for j in range(1, num+1):
         print(i*j, end=" ")
     print()
-    
+     
+'''Dec-16 Q3:'''
+status = True
+shoplist = []
+while status:
+    option = int(input("Select an option:\n1. Add an item\n2. Remove an item\n3. View list\n4. Exit\n"))
+    if option == 1:
+            addition = input("What would you like to add? ")
+            shoplist.append(addition)
+            option = 0
+    elif option == 2:
+            removal = input("What would you like to remove? ")
+            shoplist.remove(removal)
+            option = 0
+    elif option == 3:
+            print(shoplist)
+            option = 0
+    elif option == 4:
+            status = False
